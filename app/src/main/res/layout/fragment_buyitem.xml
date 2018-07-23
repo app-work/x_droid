@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity$PlaceholderFragment">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/totalAmount"
             android:background="@android:color/darker_gray"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -23,29 +23,29 @@
             android:text="Total" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/totalAmount"
             android:text="Item Buy:"
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/inputAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
-            android:layout_alignRight="@+id/textView"
+            android:layout_below="@+id/totalAmount"
+            android:layout_alignRight="@+id/item"
             android:layout_alignParentRight="true"
             android:ems="10"
             android:inputType="number" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/addAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText"
+            android:layout_below="@+id/inputAmount"
             android:layout_centerHorizontal="true"
-            android:text="Button" />
+            android:text="Add" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
